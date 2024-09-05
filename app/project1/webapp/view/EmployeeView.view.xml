@@ -16,7 +16,7 @@
                     <Label text="Name" />
                     <Input value="{name}"  />
                     
-                    <Label text="Email" />
+                    <Label text="Email ID" />
                     <Input value="{email}" type="Email" />
                     
                     <Label text="Job Title" />
