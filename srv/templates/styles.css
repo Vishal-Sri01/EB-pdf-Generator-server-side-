@@ -1,0 +1,61 @@
+body { font-family: Arial, sans-serif; padding: 20px; margin: 0; width: 100%; max-width: 800px; box-sizing: border-box; }
+.header { display: flex; flex-direction: column; align-items: flex-end; margin-bottom: 20px; }
+.header img { 
+    width: 100px; 
+    height: auto; 
+    margin-top: 30px; /* Adjust top margin */
+    margin-right: 30px; /* Adjust right margin */
+}
+.header div { 
+    text-align: right; 
+    margin-top: 10px; 
+    margin-right: 20px; /* Adjust right margin for headings */
+}
+.header h1, .header h2 { margin: 0; }
+.header h1 { font-size: 14pt; font-weight: bold; }
+.header h2 { font-size: 12pt; }
+.container { display: flex; justify-content: space-between; margin-bottom: 20px; }
+.container > div { width: 48%; }
+table { 
+    border-collapse: collapse; 
+    width: 100%; 
+    border: none; 
+    margin-top: 20px; /* Adjust top margin to move table down */
+}
+th, td { padding: 8px; border: none; }
+p { margin: 5px 0; }
+.section { 
+    margin-bottom: 20px; 
+    padding: 0 20px; 
+    box-sizing: border-box; 
+     margin-top: 0px; 
+}
+.half-line { 
+    width: 80%; /* Extend line width */
+    border-top: 3px solid #000; /* Bold line */
+    margin-top: 10px; 
+}
+.right-section { 
+    margin-top: 0 px; 
+    text-align: right; 
+    margin-right: 10px; /* Decreased to move it to the left */
+    padding-right: 230px; /* Adjust padding if necessary */
+}
+.right-section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align right-section to the right */
+}
+.leveransadress-section {
+    margin-top: -120px;
+     padding: 0 20px;  /* Adjust this value to move the section higher */
+}
+.final-note {
+    margin-top: 40px;
+     padding: 0 20px; /* Adjust this value to move the paragraph down */
+}
+.section1
+{
+    margin-top: 20px;
+    padding: 0 20px;
+}

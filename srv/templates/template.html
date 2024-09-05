@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF6NbL0HaPKi87q2KSB4gzkaQASmZhc7S_KA&s" alt="Logo" class="logo">
+        <div>
+            <h1>Ordererkännande</h1>
+            <h2>Order Confirmation</h2>
+        </div>
+    </div>
+    <div class="page-content">
+        <div class="container">
+            <div class="section">
+                <h4>Sweden AB</h4>
+                <div class="half-line"></div>
+                <div class="section1">
+                    <p>ENA Energi AB</p>
+                    <p>Håkan Englund</p>
+                    <p>Kaptensgatan 22</p>
+                    <p>745 25 Enköping</p>
+                </div>
+            </div>
+            <div>
+                <table>
+                    <tr><td>Ordernummer:</td><td>{{ID}}</td></tr>
+                    <tr><td>Datum:</td><td>{{startDate}}</td></tr>
+                    <tr><td>Er Ordernummer:</td><td>437682384934</td></tr>
+                    <tr><td>Er referens:</td><td>{{jobTitle}}</td></tr>
+                    <tr><td>Kundnummer:</td><td>3833928320</td></tr>
+                    <tr><td>Er nummer:</td><td>32874937486</td></tr>
+                    <tr><td>Kontakt:</td><td>{{department}}</td></tr>
+                    <tr><td>Telefon:</td><td>{{phoneNumber}}</td></tr>
+                    <tr><td>E-Post:</td><td>{{email}}</td></tr>
+                </table>
+                
+                
+            </div>
+        </div>
+        <div class="right-section-container">
+            <div class="right-section">
+                <h3>Fakturaadress:</h3>
+                <p>ENA Energi AB22</p>
+                <p>Kaptensgatan 22</p>
+                <p>745 25 Enköping</p>
+            </div>
+        </div>
+        <div class="leveransadress-section">
+            <h3>Leveransadress:</h3>
+            <p>ENA Energi AB</p>
+            <p>Kaptensgatan 22</p>
+            <p>745 25 Enköping</p>
+         </div>
+        <p class="final-note">Tack för din beställning. Vi bekräftar följande.</p>
+    </div>
+</body>
+</html>

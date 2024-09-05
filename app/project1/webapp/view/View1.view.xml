@@ -1,0 +1,60 @@
+<mvc:View controllerName="project1.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    displayBlock="true">
+    <Page id="page" title="Employee Management">
+        <content>
+            <Table id="employeeTable" items="{/Employees}" mode="MultiSelect">
+                <columns>
+                    <Column>
+                        <Text text="ID" />
+                    </Column>
+                    <Column>
+                        <Text text="Name" />
+                    </Column>
+                    <!-- <Column>
+                        <Text text="Email" />
+                    </Column>
+                    <Column>
+                        <Text text="Job Title" />
+                    </Column>
+                    <Column>
+                        <Text text="Department" />
+                    </Column>
+                    <Column>
+                        <Text text="Start Date" />
+                    </Column>
+                    <Column>
+                        <Text text="Salary" />
+                    </Column>
+                    <Column>
+                        <Text text="Phone Number" />
+                    </Column> -->
+                    <!-- <Column>
+                        <Text text="Address" />
+                    </Column> -->
+                </columns>
+                <items>
+                    <ColumnListItem type="Navigation" press="onItemPress">
+                        <cells>
+                            <Text text="{ID}" />
+                            <Text text="{name}" />
+                            <!-- <Text text="{email}" />
+                            <Text text="{jobTitle}" />
+                            <Text text="{department}" />
+                            <Text text="{startDate}" />
+                            <Text text="{Salary}" />
+                            <Text text="{phoneNumber}" />
+                            <Text text="{address}" /> -->
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+            <HBox >
+                    <Button text="Add Employee" press="onAdd" />
+                    <Button text="Update Employee" press="onUpdate" enabled="{= ${employeeTable>/selectedItems}.length === 1 }" />
+                    <Button text="Delete Employee" press="onDelete" enabled="{= ${employeeTable>/selectedItems}.length > 0 }" />
+                </HBox>
+        </content>
+    </Page>
+</mvc:View>

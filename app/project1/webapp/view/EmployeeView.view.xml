@@ -1,0 +1,45 @@
+<mvc:View controllerName="project1.controller.EmployeeView"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:layout="sap.ui.layout.form">
+    <Page id="EmployeeView" title="Employee Information">
+        <content>
+            <layout:SimpleForm
+                id="employeeForm"
+                editable="true"
+                layout="ResponsiveGridLayout">
+                
+                <layout:content>
+                    <Label text="ID" />
+                    <Text text="{ID}"  />
+                    
+                    <Label text="Name" />
+                    <Input value="{name}"  />
+                    
+                    <Label text="Email" />
+                    <Input value="{email}" type="Email" />
+                    
+                    <Label text="Job Title" />
+                    <Input value="{jobTitle}" />
+                    
+                    <Label text="Department" />
+                    <Input value="{department}" />
+                    
+                    <Label text="Start Date" />
+                    <DatePicker value="{startDate}" />
+                    
+                    <Label text="salary" />
+                    <Input value="{Salary}"/>
+                    
+                    <Label text="Phone Number" />
+                    <Input value="{phoneNumber}" />
+                    
+                    <Label text="Address" />
+                    <TextArea value="{address}" rows="3" />
+                </layout:content>
+            </layout:SimpleForm>
+            <Button text="Preview" press="onPreview" />
+            
+        </content>
+    </Page>
+</mvc:View>
